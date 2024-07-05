@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Camila Stapff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="centrado">
+        <h1>To-Do Ist</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="aside">
+        <div id="info-perfil">
+          <img
+            src="https://i.pinimg.com/736x/fa/fe/c8/fafec8012ee1d673f4af7d9beabf3448.jpg"
+            alt="To-Do Logo"
+          />
+          <h2 id="usuario-logueado"></h2>
+        </div>
+
+        <div id="form-filtros">
+          <label for="input-filtro-nombre">Filtrar tareas por nombre</label>
+          <input type="text" id="input-filtro-nombre" />
+
+          <label for="input-filtro-tipo">Categoría</label>
+          <select id="input-filtro-tipo">
+            <option value="">Todas</option>
+            <option value="fitness">Fitness</option>
+            <option value="educacion">Educación</option>
+            <option value="hogar">Hogar</option>
+            <option value="limpieza">Limpieza</option>
+            <option value="cuidado">Cuidado Personal</option>
+            <option value="social">Social</option>
+          </select>
+
+          <!-- <input type="button" id="boton-filtro" value="Filtrar" /> -->
+        </div>
+
+        <a href="nueva-tarea.html">+</a>
+      </div>
+
+      <section>
+        <div id="listado" class="contenedor"></div>
+        <div id="lista-error" class="error"></div>
+        <div id="listado-hechas" class="contenedor"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="login.html" id="boton-logout" class="btn-back">Logout</a>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/archivos JS/index.js" type="module"></script>
+  </body>
+</html>

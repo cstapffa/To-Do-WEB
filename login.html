@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do - Login</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="centrado">
+        <h1>To-Do Ist</h1>
+      </div>
+    </header>
+
+    <main class="centrado">
+      <form>
+        <h2>Logueate</h2>
+        <div>
+          <label for="form-login-user">Usuario:</label>
+          <input type="text" id="form-login-user" required />
+
+          <label for="form-login-password">Password:</label>
+          <input type="password" id="form-login-password" required />
+        </div>
+
+        <div id="form-login-error" class="error"></div>
+
+        <div>
+          <input type="button" id="form-login-submit" value="Login" />
+          <p>¿No tienes cuenta?<a href="register.html" class="btn-registro">Registrate</a></p>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Espero salvar!</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/archivos JS/login.js" type="module"></script>
+  </body>
+</html>

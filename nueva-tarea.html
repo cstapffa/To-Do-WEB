@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>To-Do - Nueva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="centrado">
+        <h1>To-Do Ist</h1>
+      </div>
+    </header>
+
+    <main class="centrado">
+      <form>
+        <h2>Nueva Tarea</h2>
+        <div>
+          <label for="nuevo-nombre">Nombre:</label>
+          <input type="text" id="nuevo-nombre" />
+
+          <label for="nuevo-tipo">Categoría:</label>
+          <select id="nuevo-tipo">
+            <option value="fitness">Fitness</option>
+            <option value="educacion">Educación</option>
+            <option value="hogar">Hogar</option>
+            <option value="limpieza">Limpieza</option>
+            <option value="cuidado">Cuidado Personal</option>
+            <option value="social">Social</option>
+          </select>
+
+<!--           <label for="nuevo-icono">Icono URL:</label>
+          <input type="text" id="nuevo-icono" /> -->
+        </div>
+
+        <div id="nueva-tarea-error" class="error"></div>
+        <input type="button" id="boton-nueva-tarea" value="Crear" />
+      </form>
+    </main>
+
+    <footer>
+      <div>
+        <a href="index.html" class="btn-back">Regresar</a>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/archivos JS/nueva-tarea.js" type="module"></script>
+  </body>
+</html>

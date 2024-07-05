@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #95c7cf;
+  --secondary: #17616e;
+  --light: #f5f5f5;
+  --cancel: #a71c1c;
+  --cancel-darker: #cf2e2e;
+}
+
+.centrado {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 20px;
+}
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  color: white;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+input[type="button"],
+a {
+  background-color: var(--secondary);
+  color: white;
+  border-radius: 3px;
+  padding: 10px;
+  width: 100%;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.btn-back {
+  margin-right: 20px;
+  background-color: var(--cancel-darker);
+  font-weight: 600;
+  padding: 1px 5px;
+}
+
+.btn-back:hover {
+  background-color: var(--cancel);
+}
+
+.btn-registro {
+  background-color: white;
+  text-transform: capitalize;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.btn-registro:hover {
+  text-decoration: solid underline;
+}
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+header {
+  background-color: var(--primary);
+  padding: 3px;
+  height: 7vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+main {
+  height: calc(100vh - 13vh);
+  display: flex;
+}
+
+.aside {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light);
+  padding: 0 15px;
+}
+
+#info-perfil {
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.aside input,
+.aside select {
+  padding: 5px;
+}
+
+#boton-filtro {
+  margin-top: 10px;
+}
+
+section {
+  width: 82%;
+  height: 100%;
+}
+
+section .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.item-tarea {
+  width: 125px;
+  height: 125px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  background-color: var(--secondary);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item-tarea img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 7px;
+}
+
+.item-tarea h3 {
+  font-size: 16px;
+}
+
+footer {
+  background-color: var(--primary);
+  padding: 3px;
+  height: 5vh;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer p {
+  color: var(--secondary);
+  margin-right: 20px;
+}
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+.fitness {
+  background-color: #ff8d60;
+}
+.educacion {
+  background-color: #229353;
+}
+.hogar {
+  background-color: #f5d83c;
+}
+.limpieza {
+  background-color: #46d3de;
+}
+.cuidado {
+  background-color: #e35985;
+}
+.social {
+  background-color: #c267ba;
+}
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* .modal {
+  display: none;
+} */
+
+form {
+  width: 400px;
+  height: 60%;
+
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+  border-radius: 15px;
+  padding: 20px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#boton-eliminar-tarea {
+  background-color: var(--cancel-darker);
+}
+
+#boton-eliminar-tarea:hover {
+  background-color: var(--cancel);
+}

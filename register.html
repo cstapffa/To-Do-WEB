@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do - Registar</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="centrado">
+        <h1>To-Do Ist</h1>
+      </div>
+    </header>
+
+    <main class="centrado">
+      <form>
+        <h2>Registrate</h2>
+        <div>
+          <label for="form-register-nombre">Nombre:</label>
+          <input type="text" id="form-register-nombre" required />
+
+          <label for="form-register-apellido">Apellido:</label>
+          <input type="text" id="form-register-apellido" required />
+
+          <label for="form-register-user">Usuario:</label>
+          <input type="text" id="form-register-user" required />
+
+          <label for="form-register-password">Password:</label>
+          <input type="password" id="form-register-password" required />
+        </div>
+
+        <div id="form-register-error" class="error"></div>
+
+        <div>
+          <input type="button" id="boton-register-submit" value="Registrar" />
+          <p>
+            ¿Ya tienes cuenta?<a href="login.html" class="btn-registro">
+              Logueate</a
+            >
+          </p>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Espero salvar!</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/archivos JS/register.js" type="module"></script>
+  </body>
+</html>
