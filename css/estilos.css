@@ -7,7 +7,7 @@
 :root {
   --primary: #a6d4db;
   --secondary: #17616e;
-  --hovers: #46d3de;
+  --hovers: #d4d4d4;
   --light: #f5f5f5;
   --cancel: #a71c1c;
   --cancel-darker: #cf2e2e;
@@ -145,6 +145,10 @@ main {
 section {
   width: 82%;
   height: 100%;
+}
+
+section h2 {
+  margin: 20px 40px;
 }
 
 section .contenedor {
