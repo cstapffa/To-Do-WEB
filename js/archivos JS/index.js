@@ -10,10 +10,12 @@ import { RequestsAPI } from "../RequestsAPI.js";
 validarSesion();
 eventoClickCerrarSesion();
 
-const cargarTareas = (data) => {
+const cargarDataSinTareas = () => {
   const listadoTareasInicial = `<div class="item-tarea"><a href="nueva-tarea.html">+</a></div>`;
-  imprimir("listado", `${listadoTareasInicial}`);
-  
+  imprimir("listado", listadoTareasInicial);
+};
+
+const cargarTareas = (data) => {
   console.log("Datos recibidos:", data);
   imprimir("lista-error", "");
 
@@ -66,7 +68,15 @@ document.querySelector("#input-filtro-tipo").addEventListener("change", () => {
     .catch(mostrarError);
 }); */
 
-RequestsAPI.getTareas().then(cargarTareas).catch(mostrarError);
+RequestsAPI.getTareas()
+  .then((data) => {
+    if (data.length === 0) {
+      cargarDataSinTareas();
+    } else {
+      cargarTareas(data);
+    }
+  })
+  .catch(mostrarError);
 
 RequestsAPI.getUsuario()
   .then((usuario) => {
