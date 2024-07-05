@@ -11,6 +11,9 @@ validarSesion();
 eventoClickCerrarSesion();
 
 const cargarTareas = (data) => {
+  const listadoTareasInicial = `<div class="item-tarea"><a href="nueva-tarea.html">+</a></div>`;
+  imprimir("listado", `${listadoTareasInicial}`);
+  
   console.log("Datos recibidos:", data);
   imprimir("lista-error", "");
 

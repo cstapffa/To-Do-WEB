@@ -31,11 +31,12 @@ export default class Tarea {
   }
 
   mostrarDetalle() {
+    this.elegirIcono();
     return `
-      <article id="${this.tipo}">
+      <div id="${this.tipo}">
         <img src="${this.icono}" alt="${this.tipo}" title="${this.nombre}"/>
         <h3>${this.nombre}</h3>
-      </article>
+      </div>
     `;
   }
 

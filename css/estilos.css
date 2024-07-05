@@ -5,8 +5,9 @@
 }
 
 :root {
-  --primary: #95c7cf;
+  --primary: #a6d4db;
   --secondary: #17616e;
+  --hovers: #46d3de;
   --light: #f5f5f5;
   --cancel: #a71c1c;
   --cancel-darker: #cf2e2e;
@@ -63,6 +64,11 @@ a {
   text-align: center;
   border: none;
   cursor: pointer;
+}
+
+input[type="button"]:hover,
+a:hover {
+  background-color: var(--hovers);
 }
 
 .error {
@@ -166,6 +172,16 @@ section .contenedor {
   cursor: pointer;
 }
 
+.item-tarea a {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .item-tarea img {
   width: 50px;
   height: 50px;
@@ -240,6 +256,27 @@ form {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.item-tarea-ampliacion {
+  background-color: var(--secondary);
+  color: white;
+  text-align: center;
+}
+
+.item-tarea-ampliacion img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 7px;
+}
+
+#boton-editar-tarea {
+  background-color: var(--light);
+  color: black;
+}
+
+#boton-editar-tarea:hover {
+  background-color: var(--hovers);
 }
 
 #boton-eliminar-tarea {
